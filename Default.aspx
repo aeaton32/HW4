@@ -1,7 +1,7 @@
 ﻿
 Partial Class _Default
     Inherits System.Web.UI.Page
-
+<link type="text/css" href="style.css" rel="stylesheet"/> 
     Protected Sub Submit_Click(sender As Object, e As EventArgs) Handles SubmitBTN.Click
 
         'Create variables to hold the values entered by the user
