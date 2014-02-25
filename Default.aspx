@@ -10,7 +10,29 @@ Partial Class _Default
         Dim PostT As Decimal = PostTaxTB.Text
         Dim PreT As Decimal = PreTaxTB.Text
 
-       
+        Dim HOURLY_WAGE As Decimal
+        HOURLY_WAGE = W
+
+
+        Dim HOURS_WORKED As Integer
+        HOURS_WORKED = HW
+
+        Dim POST_TAX As Decimal
+        POST_TAX = PostT
+
+        Dim PRE_TAX As Decimal
+        PRE_TAX = PreT
+
+        Dim Weekly_Pay As Decimal
+        Weekly_Pay = HOURS_WORKED * HOURLY_WAGE
+
+        Dim TaxRate As Decimal
+        If Weekly_Pay < 500 Then
+            TaxRate = 0.82
+        ElseIf Weekly_Pay > 500 Then
+            TaxRate = 0.78
+        End If
+
 
 
         'Now compute the net wage
